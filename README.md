@@ -1,5 +1,17 @@
 # GifsApp
 ![image](gifsApp.png)
+### otra posibilidad para angular animations fade in - fade out es:
+```
+trigger('myInsertRemoveTrigger', [
+  transition(':enter', [
+    style({ opacity: 0 }),
+    animate('100ms', style({ opacity: 1 })),
+  ]),
+  transition(':leave', [
+    animate('100ms', style({ opacity: 0 }))
+  ])
+]),
+```
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
 
 ## Development server
