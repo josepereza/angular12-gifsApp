@@ -1,0 +1,12 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+    <h1 class="text-light">
+      GiftApp
+    </h1>
+    <hr class="text-white">
+    <div class="list-group">
+      <a  (click)="busqueda(item)" href="#" class="list-group-item active list-group-item-action mt-2" 
+      *ngFor="let item of mihistorial "
+      >{{item |titlecase}}</a>
+
+    </div>
+    </div>
