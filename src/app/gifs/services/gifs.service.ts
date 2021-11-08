@@ -8,6 +8,7 @@ import { Gif, SearchGifsResponse } from '../interfaces/gifs.interface'
 export class GifsService {
   private _historial: string[] = []
   private _resultados: Gif[] = []
+  //  private _resultados:Array<Gif>=[]
   private apiKey = 'XH5h5U83xh4m3xWBcok9ofoLlz0wv6q8'
   private url = "https://api.giphy.com/v1/gifs"
   constructor(private http: HttpClient) {
